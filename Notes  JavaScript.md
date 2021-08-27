@@ -1,4 +1,4 @@
-# Preparing for Interview : JavaScript
+# Preparing for Interview : JavaScript & TS
 
 -----
 
@@ -381,4 +381,46 @@ const c; // error
 ## ref
 
 - [JavaScript & TypeScript & React Frontend Interview Questions Trello](https://trello.com/b/pS6ECW7v/frontend-interview-questions)
-- []
+
+<br/>
+
+- [Educative.io-Ace the JavaScript Coding Questions](https://www.educative.io/path/ace-javascript-coding-interview)
+
+- [Educative.io - Ace the Frontend Interview](https://www.educative.io/path/ace-front-end-interview)
+
+- [The JavaScript Interview Handbook: 100+ Interview Questions](https://www.educative.io/courses/javascript-interview-handbook)
+
+- [Web Development Interview Handbook](https://www.educative.io/courses/web-development-interview-handbook)
+
+- [gyoogle](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Language/%5BJavascript%5D%20ES2015%2B%20%EC%9A%94%EC%95%BD%20%EC%A0%95%EB%A6%AC.md)
+
+- [Interview-question-for-beginners-frontend](https://github.com/CS-box/Interview_Question_for_Beginner/tree/master/FrontEnd)
+
+- [Must-Know-about-Frontend](https://github.com/CS-box/Must-Know-About-Frontend)
+- [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
+- [123-Essential-JavaScript-Interview-Questions](https://github.com/CS-box/123-Essential-JavaScript-Interview-Questions)
+
+<br/>
+
+<br/>
+
+- [프론트엔드 인터뷰 핸드북](https://github.com/CS-box/front-end-interview-handbook/blob/master/contents/kr/README.md)
+
+- [WeareSoft-tech-interview-javascript](https://github.com/CS-box/tech-interview/blob/master/contents/javascript.md)
+
+- [awesome-interview-questions](https://github.com/CS-box/awesome-interview-questions)
+
+  JavaScript
+
+  Front-end build tools
+
+  ReactJS
+
+  TypeScript
+
+<br/>
+
+<br/>
+
+[토스-프론트엔드개발자에게 가장 중요한 역량은?](https://blog.toss.im/article/toss-frontend-chapter)
+
