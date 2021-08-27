@@ -95,6 +95,31 @@ ECMAScript 명세에서 의미론적인 부분을 완전히 정의해놓은 객�
 
 ## this 의 바인딩
 
+> JavaScript 에서의 this
+
+### JS 의 this
+
+- JS으 ㅣ함수는 객체, 그 중에서도 일급 객체이다. 1. 변수나 데이터에 저장 2. 함수의 인수로 전달 3. 함수의 반환 값으로 사용
+
+- 어떤 객체에 의해 호출되느냐에 따라 , this 의 의미가 많이 달라진다
+- JS의 모든 함수는 this를 가지고 있으며 , 함수 호출 시 , 그떄 상황에 따라 this가 가리키는 객체가 결정된다. 즉, 함수가 호출될 때마다 this가 동적으로 결정되는 것을 This가 SomeObject (그 객체)에 ₩바인딩₩ 된다고 표현한다.
+- 자바스크립트 엔진 -> 실행 가능한 코드 (전역 코드, 함수 코드, eval 코드) -> 실행 문맥 (렉시컬 환경 컴포넌트, 디스 바인딩 컴포넌트)
+
+
+
+### This Binding Rules 
+
+> 함수가 호출되는 상황에 따른 규칙, 우선순위 존재
+
+- 기본 바인딩 : 단독 실행
+- 암시적 바인딩
+- new 바인딩
+- 명시적 바인딩
+
+
+
+
+
 EC(Execution Context)가 생성될 때마다 this의 바인딩이 일어나며 우선순위 순으로 나열해보면 다음과 같다.
 
 1. `new` 를 사용했을 때 해당 객체로 바인딩된다.
@@ -146,7 +171,7 @@ obj.print(); // obj name
 - [김정환 블로그, 자바스크립트 this 바인딩 우선순위](http://jeonghwan-kim.github.io/2017/10/22/js-context-binding.html#암시적-바인딩과-new-바인딩의-우선순위)
 - [How does the “this” keyword work?](https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work)
 
-
+- [테코톡 브콜의 this](https://youtu.be/7RiMu2DQrb4)
 
 <br/>
 
