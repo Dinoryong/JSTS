@@ -32,6 +32,12 @@
 
 <br/>
 
+### ref
+
+[테코톡 엘라의 Scope & Closure](https://youtu.be/PVYjfrgZhtU)
+
+<br/>
+
 ## 호이스팅 Hoisting
 
 
@@ -44,9 +50,15 @@
 
 <br/>
 
+### ref
+
+[테코톡 엘라의 Scope & Closure](https://youtu.be/PVYjfrgZhtU)
+
+<br/>
+
 ## 네이티브 객체 vs 호스트 객체
 
-## 네이티브 객체 (Native Object)
+### 네이티브 객체 (Native Object)
 
 ECMAScript 명세에서 의미론적인 부분을 완전히 정의해놓은 객체들로, 다음과 같은 것들이 있다.
 
@@ -59,7 +71,7 @@ ECMAScript 명세에서 의미론적인 부분을 완전히 정의해놓은 객�
 
 
 
-## 호스트 객체 (Host Object)
+### 호스트 객체 (Host Object)
 
 자바스크립트를 실행하는 환경에 종속된 객체로 그 환경에서만 찾아볼 수 있는 객체이다. 만약 브라우저 환경이라면 다음과 같은 것들이 있다.
 
@@ -71,7 +83,7 @@ ECMAScript 명세에서 의미론적인 부분을 완전히 정의해놓은 객�
 
 
 
-## 참고
+### ref
 
 - [Must-know-about-fe](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/native-host.md)
 
@@ -127,7 +139,7 @@ obj.print(); // obj name
 
 
 
-## 참고
+### ref
 
 - [Must-know-about-fe](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/this.md)
 
@@ -137,8 +149,6 @@ obj.print(); // obj name
 
 
 <br/>
-
-## var vs let vs const
 
 ## var vs let vs const
 
@@ -175,7 +185,7 @@ run();
 
 <br/>
 
-## 호이스팅
+### 호이스팅
 
 > 호이스팅의 개념을 모른다면 [호이스팅](https://github.com/baeharam/Must-Know-About-Frontend/blob/master/Notes/Javascript/Hoisting.md) 을 보고 오자.
 
@@ -206,9 +216,9 @@ checkHoisting();
 
 반면에, let의 경우는 선언 전에 호이스팅 되긴 하지만 어떤 값도 가지지 않기 때문에 ReferenceError가 발생한다. 이런 현상을 **TDZ(Temporal Dead Zone)** 라고 한다. 즉, 선언은 되었지만 참조는 할 수 없는 사각지대를 갖는 것이다.
 
+<br/>
 
-
-## 글로벌 객체로의 바인딩
+### 글로벌 객체로의 바인딩
 
 **strict mode가 아니라는 가정 하에,**
 
@@ -225,9 +235,9 @@ console.log(window.bar); // undefined
 
 브라우저 환경에서 글로벌 객체는 `window` 인데, var의 경우 바인딩이 되었고 let의 경우는 되지 않았다는 걸 볼 수 있다.
 
+<br/>
 
-
-## 재선언 (Redeclaration)
+### 재선언 (Redeclaration)
 
 - var는 재선언이 가능하다.
 - let과 const는 재선언이 불가능하다.
@@ -240,14 +250,14 @@ let bar = "bar1";
 let bar = "bar2"; // SyntaxError: Identifier 'bar' has already been declared
 ```
 
+<br/>
 
-
-## let vs const
+### let vs const
 
 - var와 let은 재할당이 가능하다.
 - const는 선언과 초기화가 반드시 동시에 일어나야 하며 재할당이 불가능하다. 즉, 상수와 같은 고정값을 선언할 때 사용하는 키워드이다.
 
-
+<br/>
 
 ### ES2015+의 등장
 
@@ -333,6 +343,12 @@ const c; // error
 ## 프로토타입 Prototype
 
 
+
+<br/>
+
+### ref
+
+[테코톡 크리스의 Prototype](https://youtu.be/RYxgNZW3wl0)
 
 <br/>
 
