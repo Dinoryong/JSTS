@@ -8,6 +8,138 @@
 
 <br/>
 
+
+
+
+
+## 이벤트 위임 Event Delegation
+
+
+
+<br/>
+
+
+
+## 실행 컨텍스트 Execution Context
+
+
+
+<br/>
+
+## 스코프 Scope
+
+
+
+<br/>
+
+## 호이스팅 Hoisting
+
+
+
+<br/>
+
+## 클로저 Closure
+
+
+
+<br/>
+
+## 네이티브 객체 vs 호스트 객체
+
+## 네이티브 객체 (Native Object)
+
+ECMAScript 명세에서 의미론적인 부분을 완전히 정의해놓은 객체들로, 다음과 같은 것들이 있다.
+
+- `Object`
+- `Function`
+- `Date`
+- `Math`
+- `parseInt`
+- `eval` ...
+
+
+
+## 호스트 객체 (Host Object)
+
+자바스크립트를 실행하는 환경에 종속된 객체로 그 환경에서만 찾아볼 수 있는 객체이다. 만약 브라우저 환경이라면 다음과 같은 것들이 있다.
+
+- `window`
+- `document`
+- `location`
+- `XMLHttpRequest`
+- `querySelectorAll` ...
+
+
+
+## 참고
+
+- [Must-know-about-fe](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/native-host.md)
+
+- [Stackoverflow, What is the difference between native objects and host objects?](https://stackoverflow.com/questions/7614317/what-is-the-difference-between-native-objects-and-host-objects)
+- [MDN, Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+- [Poiemaweb, 빌트인 객체](https://poiemaweb.com/js-built-in-object)
+
+<br/>
+
+## this 의 바인딩
+
+EC(Execution Context)가 생성될 때마다 this의 바인딩이 일어나며 우선순위 순으로 나열해보면 다음과 같다.
+
+1. `new` 를 사용했을 때 해당 객체로 바인딩된다.
+
+```
+var name = "global";
+function Func() {
+  this.name = "Func";
+  this.print = function f() { console.log(this.name); };
+}
+var a = new Func();
+a.print(); // Func
+```
+
+1. `call`, `apply`, `bind` 와 같은 명시적 바인딩을 사용했을 때 인자로 전달된 객체에 바인딩된다.
+
+```
+function func() {
+  console.log(this.name);
+}
+
+var obj = { name: 'obj name' };
+func.call(obj); // obj name
+func.apply(obj); // obj name
+(func.bind(obj))(); // obj name
+```
+
+1. 객체의 메소드로 호출할 경우 해당 객체에 바인딩된다.
+
+```
+var obj = {
+  name: 'obj name',
+  print: function p() { console.log(this.name); }
+};
+obj.print(); // obj name
+```
+
+1. 그 외의 경우
+
+- strict mode: `undefined` 로 초기화된다.
+- 일반: 브라우저라면 `window` 객체에 바인딩 된다.
+
+
+
+## 참고
+
+- [Must-know-about-fe](https://github.com/baeharam/Must-Know-About-Frontend/blob/main/Notes/javascript/this.md)
+
+- [김정환 블로그, 자바스크립트 this 바인딩 우선순위](http://jeonghwan-kim.github.io/2017/10/22/js-context-binding.html#암시적-바인딩과-new-바인딩의-우선순위)
+- [How does the “this” keyword work?](https://stackoverflow.com/questions/3127429/how-does-the-this-keyword-work)
+
+
+
+<br/>
+
+## var vs let vs const
+
 ## var vs let vs const
 
 >  모두 변수를 선언하는 키워드라는 것은 동일하다. 하지만, let과 const는 ES2015(ES6)에서 등장했고 여러가지 다른 특성을 갖는다.
@@ -169,58 +301,6 @@ const c; // error
 
 
 
-
-
-
-
-
-## 이벤트 위임 Event Delegation
-
-
-
-<br/>
-
-
-
-## 실행 컨텍스트 Execution Context
-
-
-
-<br/>
-
-## 스코프 Scope
-
-
-
-<br/>
-
-## 호이스팅 Hoisting
-
-
-
-<br/>
-
-## 클로저 Closure
-
-
-
-<br/>
-
-## 네이티브 객체 vs 호스트 객체
-
-
-
-<br/>
-
-## this 의 바인딩
-
-
-
-
-
-<br/>
-
-## var vs let vs const
 
 
 
